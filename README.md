@@ -1,6 +1,20 @@
 # babel-plugin-auto-import-aphrodite
 
 Auto-import `StyleSheet` and `css` from [Aphrodite](https://github.com/Khan/aphrodite).
+###### Before:
+```javascript
+const style = StyleSheet.create({
+  display: 'none'
+})
+```
+###### After:
+```javascript
+import { StyleSheet, css } from 'aphrodite/no-important'
+const style = StyleSheet.create({
+  display: 'none'
+})
+
+```
 
 ## Installation
 
